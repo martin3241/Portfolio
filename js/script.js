@@ -1,18 +1,9 @@
-console.log("Hello world!");
-
-const myName = "Jonas Schmedtmann";
 const h1 = document.querySelector(".heading-primary");
-console.log(myName);
-console.log(h1);
 
-// h1.addEventListener("click", function () {
-//   h1.textContent = myName;
-//   h1.style.backgroundColor = "red";
-//   h1.style.padding = "5rem";
-// });
 
 ///////////////////////////////////////////////////////////
 // Set current year
+// I have to say that this is a neat little trick that I learned and one of the first times that I used JS to make my life a little easier. Instead if changing the year number at the end of the page every year, I just wrote three lines of code and forgot about the whole thing!
 const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
 yearEl.textContent = currentYear;
